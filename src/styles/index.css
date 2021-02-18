@@ -1,16 +1,68 @@
+@font-face {
+  font-family: 'Archivo-Bold';
+  src: local('Archivo-Bold'),
+  url('./assets/fonts/Archivo-Bold.ttf') format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Archivo-Medium';
+  src: local('Archivo-Medium'),
+  url('./assets/fonts/Archivo-Medium.ttf') format("truetype");
+  font-weight: normal;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: 'Archivo-Bold', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.hero-section {
+  background: #F5F1ED;
+  height: 100vh;
 }
+
+#byrd-logo {
+  width: 216px;
+  height: auto
+}
+
+
+
+/* Desktop navbar */
+
+.desktop-nav {
+  border: 1px solid red;
+  
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-container {
+  border: 1px solid red;
+}
+
+.right-container {
+  border: 1px solid red;
+}
+
+.left-container ul,
+.right-container ul {
+  list-style: none;
+}
+
+.left-container ul li,
+.right-container ul li{
+  display: inline-block;
+  padding-right: 30px;
+}
+
+
+
+/* Drop-down menu (for tablet width and below) */
 
 .inner-menu-container {
   position: relative;

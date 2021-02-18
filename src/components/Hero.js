@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 
 import HeroDesktopNavbar from './HeroDesktopNavbar'
 import DropdownMenu from './common/DropdownMenu'
-import Logo from '../styles/assets/Logo.png'
 import Drone from '../styles/assets/Drone.png'
 import Shadow from '../styles/assets/Shadow.png'
 
@@ -21,6 +20,7 @@ const Hero = () => {
 
   return (
     <>
+    <section className='hero-section'>
     <div>
       {isDesktop ? (
         <div>
@@ -32,13 +32,6 @@ const Hero = () => {
         </div>
       )}
     </div>
-    <div>
-      <img 
-        src={Logo}
-        alt='ByrdMR logo'
-      />
-    </div>
-    <section>
       <div>
         <img
           src={Drone}
