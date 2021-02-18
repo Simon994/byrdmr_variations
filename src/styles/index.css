@@ -58,11 +58,13 @@ body {
 .hero-inner-container p {
   color: rgba(0, 0, 0, 0.23);
   margin-top: 0;
+  text-align: center;
 }
 
 .hero-inner-container h3 {
   font-size: 20px;
   margin-bottom: 10px;
+  letter-spacing: 0.075em;
 }
 
 /* Desktop navbar */
@@ -147,7 +149,7 @@ body {
 }
 
 .menu {
-  background: none;
+  background: white;
   position: absolute;
   top: 60px;
   right: 0;
@@ -195,12 +197,28 @@ body {
   
   .hero-inner-container h1 {
     font-size: 110px;
-    margin: 20px 0 20px 0;
+    margin: 20px 0 10px 0;
   }
 
   .outer-menu-container .byrd-logo {
     margin-top: 25px;
     width: 136px;
     height: auto;
+  }
+
+  .menu-trigger img {
+    margin-top: 7px;
+    position: absolute;
+    right: -45px;
+  }
+
+  .hero-inner-container h3 {
+    margin-bottom: 5px;
+    max-width: 282px;
+  }
+
+  .menu {
+    z-index: 20;
+    top: 30px;
   }
 }
