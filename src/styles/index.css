@@ -49,6 +49,7 @@ body {
 .hero-inner-container h1 {
   font-family: 'Archivo-Bold';
   font-size: 265px;
+  letter-spacing: 0.075em;
   margin: -110px 0 0 0;
   color: white;
 }
@@ -95,17 +96,27 @@ body {
   padding-right: 50.5px;
 }
 
-#byrd-logo {
+.byrd-logo {
   width: 216px;
-  height: auto
+  height: 32.11px;
 }
 
 
 
 /* Drop-down menu (for tablet width and below) */
 
+.outer-menu-container {
+  display: flex;
+  justify-content: center;
+}
+
+.outer-menu-container .byrd-logo {
+  margin-top: 52px;
+}
+
 .inner-menu-container {
-  position: relative;
+  position: absolute;
+  right: 63px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -131,7 +142,8 @@ body {
 }
 
 .menu-trigger img {
-  width: 100px;
+  margin-top: 40px;
+  width: 60px;
 }
 
 .menu {
@@ -161,4 +173,34 @@ body {
 
 .menu li {
   border-bottom: 1px solid #dddddd;
+}
+
+
+@media screen and (max-width: 768px) {
+  .hero-inner-container h1 {
+    font-size: 160px;
+    margin: 20px 0 20px 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .hero-inner-container {
+    padding-top: 50px;
+    overflow: hidden;
+  }
+
+  #drone-img {
+    width: 410px;
+  }
+  
+  .hero-inner-container h1 {
+    font-size: 110px;
+    margin: 20px 0 20px 0;
+  }
+
+  .outer-menu-container .byrd-logo {
+    margin-top: 25px;
+    width: 136px;
+    height: auto;
+  }
 }

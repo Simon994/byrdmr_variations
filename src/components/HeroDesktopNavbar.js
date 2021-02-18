@@ -16,7 +16,7 @@ function HeroDesktopNavbar() {
       <img 
         src={Logo}
         alt='ByrdMR logo'
-        id='byrd-logo'
+        className='byrd-logo'
       />
       <div className='right-container'>
         <ul>
