@@ -32,19 +32,21 @@ const Hero = () => {
         </div>
       )}
     </div>
-      <div>
+      <div className='hero-inner-container'>
         <img
           src={Drone}
+          id='drone-img'
           alt='Drone'
         />
         <img 
           src={Shadow}
-          alt='Drone'
+          id='shadow-img'
+          alt='Shadow'
         />
+        <h1>F-210</h1>
+        <h3>"THE FASTEST DRONE ON THE PLANET"</h3>
+        <p>"The— The Wirecutter</p>
       </div>
-      <h1>F-210</h1>
-      <h3>"THE FASTEST DRONE ON THE PLANET"</h3>
-      <p>"The— The Wirecutter</p>
     </section>
     </>
   );
