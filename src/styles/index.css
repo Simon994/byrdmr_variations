@@ -103,6 +103,10 @@ body {
   height: 32.11px;
 }
 
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
 
 
 /* Drop-down menu (for tablet width and below) */

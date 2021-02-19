@@ -28,13 +28,10 @@ export default function DropdownMenu() {
           ref={dropdownRef}
           className={`menu ${isActive ? 'active' : 'inactive'}`}
         >
-          <MenuAndNavItems/>
-          {/* <ul>
-            <li>STORE</li>
-            <li>TUTORIALS</li>
-            <li>BLOG</li>
-            <li>CONTACT</li>
-          </ul> */}
+          <MenuAndNavItems 
+            listItems={['store', 'tutorials']}/>
+          <MenuAndNavItems 
+            listItems={['blog', 'contact']}/>
         </nav>
       </div>
     </div>
