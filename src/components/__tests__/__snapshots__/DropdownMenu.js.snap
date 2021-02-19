@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`The Menu renders as expected 1`] = `
+exports[`The DropdownMenu renders as expected 1`] = `
 <div
   className="outer-menu-container"
 >
@@ -27,18 +27,21 @@ exports[`The Menu renders as expected 1`] = `
       <ul>
         <li>
           <a
-            href="#"
+            aria-current={null}
+            className="nav-link"
+            href="/store"
+            onClick={[Function]}
           >
             STORE
           </a>
         </li>
         <li>
           <a
-            href="#"
+            aria-current={null}
+            className="nav-link"
+            href="/tutorials"
+            onClick={[Function]}
           >
-            exact to=
-            /tutorials
-            className='nav-link' activeClassName='selected' &gt;
             TUTORIALS
           </a>
         </li>
@@ -46,18 +49,21 @@ exports[`The Menu renders as expected 1`] = `
       <ul>
         <li>
           <a
-            href="#"
+            aria-current={null}
+            className="nav-link"
+            href="/blog"
+            onClick={[Function]}
           >
             BLOG
           </a>
         </li>
         <li>
           <a
-            href="#"
+            aria-current={null}
+            className="nav-link"
+            href="/contact"
+            onClick={[Function]}
           >
-            exact to=
-            /contact
-            className='nav-link' activeClassName='selected' &gt;
             CONTACT
           </a>
         </li>

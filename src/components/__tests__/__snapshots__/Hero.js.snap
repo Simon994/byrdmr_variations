@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Hero component renders as expected 1`] = `
+<section
+  className="hero-section"
+>
+  <div>
+    <div>
+      <nav
+        className="desktop-nav"
+      >
+        <div
+          className="left-container"
+        >
+          <ul>
+            <li>
+              <a
+                aria-current={null}
+                className="nav-link"
+                href="/store"
+                onClick={[Function]}
+              >
+                STORE
+              </a>
+            </li>
+            <li>
+              <a
+                aria-current={null}
+                className="nav-link"
+                href="/tutorials"
+                onClick={[Function]}
+              >
+                TUTORIALS
+              </a>
+            </li>
+          </ul>
+        </div>
+        <img
+          alt="ByrdMR logo"
+          className="byrd-logo"
+          src="Logo.png"
+        />
+        <div
+          className="right-container"
+        >
+          <ul>
+            <li>
+              <a
+                aria-current={null}
+                className="nav-link"
+                href="/blog"
+                onClick={[Function]}
+              >
+                BLOG
+              </a>
+            </li>
+            <li>
+              <a
+                aria-current={null}
+                className="nav-link"
+                href="/contact"
+                onClick={[Function]}
+              >
+                CONTACT
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div
+    className="hero-inner-container"
+  >
+    <img
+      alt="Drone"
+      id="drone-img"
+      src="Drone.png"
+    />
+    <img
+      alt="Shadow"
+      id="shadow-img"
+      src="Shadow.png"
+    />
+    <h1>
+      F-210
+    </h1>
+    <h3>
+      "THE FASTEST DRONE ON THE PLANET"
+    </h3>
+    <p>
+      "The— The Wirecutter
+    </p>
+  </div>
+</section>
+`;

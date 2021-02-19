@@ -1,5 +1,6 @@
 import React from 'react'
-import { NavLink, withRouter } from 'react-router-dom'
+import { BrowserRouter as Router, NavLink } from 'react-router-dom'
+
 
 const MenuAndNavItems = (props) => {
   const [listItemOne, listItemTwo] = [...props.listItems]
@@ -7,18 +8,26 @@ const MenuAndNavItems = (props) => {
   return (
     <ul>
       <li>
-        <a href='#'>
-        {listItemOne.toUpperCase()}
-        </a>
+        <Router>
+          <NavLink 
+            exact to={`/${listItemOne}`}
+            className='nav-link'
+            activeClassName='selected'
+          >
+          {listItemOne.toUpperCase()}
+          </NavLink>
+        </Router>
       </li>
       <li>
-        <a href='#'> 
-          exact to={`/${listItemTwo}`}
-          className='nav-link'
-          activeClassName='selected'
-        >
-        {listItemTwo.toUpperCase()}
-        </a>
+        <Router>
+          <NavLink 
+            exact to={`/${listItemTwo}`}
+            className='nav-link'
+            activeClassName='selected'
+          >
+          {listItemTwo.toUpperCase()}
+          </NavLink>
+        </Router>
       </li>
     </ul>
   )

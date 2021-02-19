@@ -1,10 +1,10 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import DropdownMenu from '../common/DropdownMenu'
+import Hero from '../Hero'
 
-describe('The DropdownMenu', () => {
+describe('The Hero component', () => {
   it('renders as expected', () => {
-    const tree = renderer.create(<DropdownMenu/>).toJSON()
+    const tree = renderer.create(<Hero/>).toJSON()
 
     expect(tree).toMatchSnapshot()
   })
