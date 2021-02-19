@@ -1,7 +1,7 @@
 # BYRDMR
 
-## What:
-A React app for the BYRDMR drone, with two views (and corresponding components): Hero and Contact.
+## Summary:
+A React app for the BYRDMR drone, with two views (and corresponding components): Hero and Contact. See below for more details on what's been done.
 
 ## Technologies and packages used:
 * React.js (this project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).)
@@ -12,31 +12,26 @@ A React app for the BYRDMR drone, with two views (and corresponding components):
 * react-router-dom
 
 
-## Available Scripts
+## How to run locally:
 
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
+Clone or download the repo
+In the project directory, install dependencies: run `npm i` in Terminal
+Start the development server: run `npm start`
+Navigate in your browser to `localhost:3000` You should see the frontend being served to the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `yarn test`
+## How to test locally:
 
-Launches the test runner in the interactive watch mode.\
+In the project directory, run `npm run test` in Terminal.
+This launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Please note that although (snapshot) tests have been written, these are currently failing: see below in the 'next-steps and improvements' section for details of why.
 
+## Other scripts
 ### `yarn build`
 
 Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `yarn eject`
@@ -49,32 +44,5 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## The app
+### What's been done
