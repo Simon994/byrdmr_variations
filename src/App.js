@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 import Hero from './components/Hero'
+import HeroDesktopNavbar from './components/HeroDesktopNavbar'
 
 const App = () => {
   return (
