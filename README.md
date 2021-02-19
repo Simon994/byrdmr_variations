@@ -68,12 +68,12 @@ Using the component `ToggleActive`, the dropdown menu has also been made interac
 
 #### *Feature: Add Contact component*
 
-A `Contact` component has been made, containing a form. This is a controlled component, the state of which is updated when a user types in the component's `<input>` or `textarea` fields.  
+A `Contact` component has been made, containing a form. This is a controlled component, the state of which is updated when a user types in the component's `<input>` or `<textarea>` fields.  
 
 Screenshot of Contact view:
 ![Contact desktop screenshot](./readme-screenshots/Contact-desktop-screenshot.png)
 
-The component has an (asynchronous) method, `handleSubmit`, which includes some basic error handling and a call to `postMessage`:
+The component has an (asynchronous) method, `handleSubmit`, which is called when the form's button is clicked. It includes some basic error handling and a call to `postMessage`:
 ```JavaScript
   handleSubmit = async (e) => {
       e.preventDefault()
