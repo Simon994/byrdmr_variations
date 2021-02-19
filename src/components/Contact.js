@@ -48,7 +48,7 @@ class Contact extends React.Component {
     const {fullName, email, message} = this.state.formData
 
     return (
-      <>
+      <div className='contact-container'>
         <DropdownMenu/>
         <form onSubmit={this.handleSubmit}>
           <label className='form-label'>FULL NAME</label>
@@ -56,22 +56,33 @@ class Contact extends React.Component {
               onChange={this.handleChange}
               value={fullName}
               name='fullName'
+              className='input-regular'
             />
           <label className='form-label'>EMAIL</label>
           <input placeholder='Enter your email'
               onChange={this.handleChange}
               value={email}
               name='email'
+              className='input-regular'
             />
           <label className='form-label'>MESSAGE</label>
-          <input placeholder='What are your plans?'
+          <textarea placeholder='What are your plans?'
               onChange={this.handleChange}
               value={message}
               name='message'
+              className='input-large'
             />
-          <button type='submit'>Send Message <span>&rarr;</span></button>
+          <button type='submit'>
+            <div>
+              Send
+              Message
+            </div>
+            <div id='arrow'>
+              &rarr;
+            </div>
+          </button>
         </form>
-      </>
+      </div>
     )
   }
 }
