@@ -1,0 +1,228 @@
+@font-face {
+  font-family: 'Archivo-Bold';
+  src: local('Archivo-Bold'),
+  url('./assets/fonts/Archivo-Bold.ttf') format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Archivo-Medium';
+  src: local('Archivo-Medium'),
+  url('./assets/fonts/Archivo-Medium.ttf') format("truetype");
+  font-weight: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'Archivo-Medium', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hero section text and images */
+
+.hero-section {
+  background: #F5F1ED;
+  height: 100vh;
+}
+
+.hero-inner-container {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: inherit;
+}
+
+#drone-img {
+  width: 429px;
+  height: auto;
+  z-index: 10;
+}
+
+#shadow-img {
+  width: 300px;
+  z-index: 10;
+}
+
+.hero-inner-container h1 {
+  font-family: 'Archivo-Bold';
+  font-size: 265px;
+  letter-spacing: 0.075em;
+  margin: -110px 0 0 0;
+  color: white;
+}
+
+.hero-inner-container h3,
+.hero-inner-container p {
+  color: rgba(0, 0, 0, 0.23);
+  margin-top: 0;
+  text-align: center;
+}
+
+.hero-inner-container h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  letter-spacing: 0.075em;
+}
+
+/* Desktop navbar */
+
+.desktop-nav {
+  padding-top: 74px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-container ul,
+.right-container ul {
+  list-style: none;
+}
+.left-container ul li,
+.right-container ul li {
+  display: inline-block;
+}
+
+.left-container ul {
+  margin-left: 131.5px;
+}
+
+.right-container ul {
+  margin-right: 131.5px;
+}
+
+.left-container ul li:first-child,
+.right-container ul li:first-child {
+  padding-right: 50.5px;
+}
+
+.byrd-logo {
+  width: 216px;
+  height: 32.11px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+
+
+/* Drop-down menu (for tablet width and below) */
+
+.outer-menu-container {
+  display: flex;
+  justify-content: center;
+}
+
+.outer-menu-container .byrd-logo {
+  margin-top: 52px;
+}
+
+.inner-menu-container {
+  position: absolute;
+  right: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-trigger {
+  background: none;
+  cursor: pointer;
+  border: none;
+  transition: box-shadow 0.4s ease;
+  margin-left: auto;
+}
+
+.menu-trigger:hover {
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.menu-trigger span {
+  font-weight: 700;
+  vertical-align: middle;
+  font-size: 14px;
+  margin: 0 10px;
+}
+
+.menu-trigger img {
+  margin-top: 40px;
+  width: 60px;
+}
+
+.menu {
+  background: white;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 150px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+}
+
+.menu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(50px);
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  border-bottom: 1px solid #dddddd;
+}
+
+
+@media screen and (max-width: 768px) {
+  .hero-inner-container h1 {
+    font-size: 160px;
+    margin: 20px 0 20px 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .hero-inner-container {
+    padding-top: 50px;
+    overflow: hidden;
+  }
+
+  #drone-img {
+    width: 410px;
+  }
+  
+  .hero-inner-container h1 {
+    font-size: 110px;
+    margin: 20px 0 10px 0;
+  }
+
+  .outer-menu-container .byrd-logo {
+    margin-top: 25px;
+    width: 136px;
+    height: auto;
+  }
+
+  .menu-trigger img {
+    margin-top: 7px;
+    position: absolute;
+    right: -45px;
+  }
+
+  .hero-inner-container h3 {
+    margin-bottom: 5px;
+    max-width: 282px;
+  }
+
+  .menu {
+    z-index: 20;
+    top: 30px;
+  }
+}
