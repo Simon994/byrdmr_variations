@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink, withRouter } from 'react-router-dom'
 
+import MenuAndNavItems from './common/MenuAndNavItems'
 import Logo from '../styles/assets/Logo.png'
 
 function HeroDesktopNavbar() {
@@ -8,10 +9,7 @@ function HeroDesktopNavbar() {
   return (
     <nav className='desktop-nav'>
       <div className='left-container'>
-        <ul>
-          <li>STORE</li>
-          <li>TUTORIALS</li>
-        </ul>
+        <MenuAndNavItems listItems={['store', 'tutorials']}/>
       </div>
       <img 
         src={Logo}
@@ -19,10 +17,7 @@ function HeroDesktopNavbar() {
         className='byrd-logo'
       />
       <div className='right-container'>
-        <ul>
-          <li>BLOG</li>
-          <li>CONTACT</li>
-        </ul>
+        <MenuAndNavItems listItems={['blog', 'contact']}/>
       </div>
     </nav>
   )

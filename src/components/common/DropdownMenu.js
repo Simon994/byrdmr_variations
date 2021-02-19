@@ -1,5 +1,6 @@
 import React, {useRef} from 'react'
 
+import MenuAndNavItems from './MenuAndNavItems'
 import ToggleActive from './ToggleActive'
 import menu from '../../styles/assets/menu.png'
 import Logo from '../../styles/assets/Logo.png'
@@ -27,12 +28,13 @@ export default function DropdownMenu() {
           ref={dropdownRef}
           className={`menu ${isActive ? 'active' : 'inactive'}`}
         >
-          <ul>
+          <MenuAndNavItems/>
+          {/* <ul>
             <li>STORE</li>
             <li>TUTORIALS</li>
             <li>BLOG</li>
             <li>CONTACT</li>
-          </ul>
+          </ul> */}
         </nav>
       </div>
     </div>
