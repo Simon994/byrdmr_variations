@@ -7,25 +7,21 @@ const MenuAndNavItems = (props) => {
   return (
     <ul>
       <li>
-        <NavLink 
-          exact to={`/${listItemOne}`}
-          className='nav-link'
-          activeClassName='selected'
-        >
+        <a href='#'>
         {listItemOne.toUpperCase()}
-        </NavLink>
+        </a>
       </li>
       <li>
-        <NavLink 
+        <a href='#'> 
           exact to={`/${listItemTwo}`}
           className='nav-link'
           activeClassName='selected'
         >
         {listItemTwo.toUpperCase()}
-        </NavLink>
+        </a>
       </li>
     </ul>
   )
 }
 
-export default withRouter(MenuAndNavItems)
+export default MenuAndNavItems

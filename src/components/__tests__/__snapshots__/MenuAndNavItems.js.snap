@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Menu renders as expected 1`] = `
+<ul>
+  <li>
+    <a
+      href="#"
+    >
+      STORE
+    </a>
+  </li>
+  <li>
+    <a
+      href="#"
+    >
+      exact to=
+      /tutorials
+      className='nav-link' activeClassName='selected' &gt;
+      TUTORIALS
+    </a>
+  </li>
+</ul>
+`;

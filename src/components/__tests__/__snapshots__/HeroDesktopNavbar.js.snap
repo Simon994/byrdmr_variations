@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The navbar for hero view on desktop device renders as expected 1`] = `
+<nav
+  className="desktop-nav"
+>
+  <div
+    className="left-container"
+  >
+    <ul>
+      <li>
+        <a
+          href="#"
+        >
+          STORE
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          exact to=
+          /tutorials
+          className='nav-link' activeClassName='selected' &gt;
+          TUTORIALS
+        </a>
+      </li>
+    </ul>
+  </div>
+  <img
+    alt="ByrdMR logo"
+    className="byrd-logo"
+    src="Logo.png"
+  />
+  <div
+    className="right-container"
+  >
+    <ul>
+      <li>
+        <a
+          href="#"
+        >
+          BLOG
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          exact to=
+          /contact
+          className='nav-link' activeClassName='selected' &gt;
+          CONTACT
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+`;
