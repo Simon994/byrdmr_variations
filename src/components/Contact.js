@@ -50,38 +50,40 @@ class Contact extends React.Component {
     return (
       <div className='contact-container'>
         <DropdownMenu/>
-        <form onSubmit={this.handleSubmit}>
-          <label className='form-label'>FULL NAME</label>
-          <input placeholder='Enter your full name'
-              onChange={this.handleChange}
-              value={fullName}
-              name='fullName'
-              className='input-regular'
-            />
-          <label className='form-label'>EMAIL</label>
-          <input placeholder='Enter your email'
-              onChange={this.handleChange}
-              value={email}
-              name='email'
-              className='input-regular'
-            />
-          <label className='form-label'>MESSAGE</label>
-          <textarea placeholder='What are your plans?'
-              onChange={this.handleChange}
-              value={message}
-              name='message'
-              className='input-large'
-            />
-          <button type='submit'>
-            <div>
-              Send
-              Message
-            </div>
-            <div id='arrow'>
-              &rarr;
-            </div>
-          </button>
-        </form>
+        <div className='form-container'>
+          <form onSubmit={this.handleSubmit}>
+            <label className='form-label'>FULL NAME</label>
+            <input placeholder='Enter your full name'
+                onChange={this.handleChange}
+                value={fullName}
+                name='fullName'
+                className='input-regular'
+              />
+            <label className='form-label'>EMAIL</label>
+            <input placeholder='Enter your email'
+                onChange={this.handleChange}
+                value={email}
+                name='email'
+                className='input-regular'
+              />
+            <label className='form-label'>MESSAGE</label>
+            <textarea placeholder='What are your plans?'
+                onChange={this.handleChange}
+                value={message}
+                name='message'
+                className='input-large'
+              />
+            <button type='submit'>
+              <div>
+                Send
+                Message
+              </div>
+              <div id='arrow'>
+                &rarr;
+              </div>
+            </button>
+          </form>
+        </div>
       </div>
     )
   }

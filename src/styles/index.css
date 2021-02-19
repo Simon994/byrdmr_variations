@@ -182,10 +182,101 @@ body {
 }
 
 
+
+/* Contact form  */
+
+.contact-container {
+  background: #F5F1ED;
+  height: 100vh;
+}
+
+.form-container {
+  height: 85vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 658px;
+}
+
+form label,
+form input,
+textarea {
+  display: block;
+  width: 100%;
+}
+
+form label {
+  font-size: 16px;
+  margin-bottom: 7px;
+}
+
+form input,
+textarea {
+  font-size: 19px;
+  font-family: 'Archivo-Medium';
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  background: inherit;
+  margin-bottom: 25px;
+  resize: none;
+}
+
+textarea {
+  padding-bottom: 60px;
+}
+
+.input-regular {
+  padding-bottom: 20px;
+}
+
+form button {
+  background: #FF5300;
+  border: none;
+  cursor: pointer;
+  color: white;
+  width: 223px;
+  height: 58px;
+  font-size: 18px;
+  padding-top: 15px;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+form button:hover {
+  background: #434343;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.4s ease 0s;
+}
+
+form button div {
+  width: 30%;
+  text-align: center;
+}
+
+#arrow {
+  font-size: 20px;
+}
+
+
+/* Media rules */
+
+
+
 @media screen and (max-width: 768px) {
   .hero-inner-container h1 {
     font-size: 160px;
     margin: 20px 0 20px 0;
+  }
+
+  form {
+    width: 647px;
   }
 }
 
@@ -225,80 +316,8 @@ body {
     z-index: 20;
     top: 30px;
   }
-}
 
-
-/* Contact form  */
-
-.contact-container {
-  background: #F5F1ED;
-  height: 100vh;
-}
-
-form {
-  border: 1px solid red;
-  max-width: 658px;
-}
-
-form label,
-form input,
-textarea {
-  display: block;
-  width: 100%;
-}
-
-form label {
-  font-size: 16px;
-  margin-bottom: 7px;
-}
-
-form input,
-textarea {
-  font-size: 19px;
-  font-family: 'Archivo-Medium';
-  border: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  background: inherit;
-  margin-bottom: 25px;
-}
-
-textarea {
-  padding-bottom: 60px;
-}
-
-.input-regular {
-  padding-bottom: 20px;
-}
-
-form button {
-  background: #FF5300;
-  border: none;
-  cursor: pointer;
-  color: white;
-  width: 223px;
-  height: 58px;
-  font-size: 18px;
-  padding-top: 15px;
-
-  display: flex;
-  justify-content: space-around;
-}
-
-form button:hover {
-  background: #434343;
-  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-  box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
-  transition: all 0.4s ease 0s;
-}
-
-form button div {
-  width: 30%;
-  text-align: center;
-}
-
-
-
-#arrow {
-  font-size: 20px;
+  form {
+    width: 322px;
+  }
 }
