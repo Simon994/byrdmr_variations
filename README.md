@@ -133,4 +133,5 @@ The test(s) will need to be updated to account for the above — I’m going to 
 * Add social media icons in `Contact` to match the Sketch
 * Update the arrow symbol in the form submission button, to match the Sketch (would ideally need an icon designed for this)
 * Update / check with UX for current styling and implementation of the dropdown menu
+* Update the `public` folder (currently still has boilerplate from create-react-app)
 * Build the other views for the app
