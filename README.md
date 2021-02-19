@@ -13,18 +13,20 @@ A React app for the BYRDMR drone, with two views (and corresponding components):
 
 ## How to run locally:
 
-Clone or download the repo
-In the project directory, install dependencies: run `npm i` in Terminal
-Start the development server: run `npm start`
-Navigate in your browser to `localhost:3000` You should see the frontend being served to the browser.
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* Clone or download the repo
+* In the project directory, install dependencies: run `npm i` in Terminal
+* Start the development server: run `npm start`
+* Navigate in your browser to `localhost:3000` You should see the frontend being served to the browser.
+* The page will reload if you make edits.
+* You will also see any lint errors in the console.
 
 ## How to test locally:
 
-In the project directory, run `npm run test` in Terminal.
+In the project directory, run `npm run test` in Terminal.  
+
 This launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.  
+
 Please note that although (snapshot) tests have been written, these are currently failing: see below in the 'next-steps and improvements' section for details of why.
 
 ## Other scripts
