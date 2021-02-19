@@ -94,7 +94,7 @@ The component has an (asynchronous) method, `handleSubmit`, which is called when
     }
 ```
 
-The function `postMessage` (in the folder `src/lib`) makes a post request, using axios. As shown below, the function will `console.log` the form data to be posted; however, it will currently return a 404 error, as the url being used doesn't yet go anywhere valid and is simply included here as an example of how the request can be made:
+The function `postMessage` (in the folder `src/lib`) makes a post request, using axios; however, it will currently return a 404 error, as the url being used doesn't yet go anywhere valid and is simply included here as an example of how the request can be made. As shown below, the function currently also `console.log`s the form data to be posted:
 ```JavaScript
   export const postMessage = (formData) => {
     console.log(formData)
@@ -103,10 +103,10 @@ The function `postMessage` (in the folder `src/lib`) makes a post request, using
 ```
 
 #### *Routing*
-App.js currently contains `Route`s for the `Hero` and `Contact` components. More can be added here in future.
+App.js currently contains `Route`s for the `Hero` and `Contact` components. More routes can be added in future.
 
 ### Testing
-Some (relatively crude!) tests have been added for the Hero component and children (in the folder `components/__tests__/`). 
+Some (crude!) tests have been added for the Hero component and children (in the folder `components/__tests__/`). 
 These are simple snapshot tests using Jest. For example, to test that the dropdown renders:
 
 ```JavaScript
@@ -118,18 +118,19 @@ describe('The DropdownMenu', () => {
   })
 })
 ```
-As it stands, the tests are currently failing. This is because, in the `MenuAndNavItems` component, we use `NavLink` (imported from react-router-dom node module) to link the list items to other views. Jest currently fails tests with the message ‘Invariant failed: You should not use <withRouter(MenuAndNavItems) /> outside a <Router>’.  
+As it stands, the tests are currently failing. This is because, in the `MenuAndNavItems` component, we use `NavLink` (imported from react-router-dom node module) to link the list items to other views. Jest currently fails tests with the message: Invariant failed: You should not use `<withRouter(MenuAndNavItems) />` outside a `<Router>`.  
 
-Without using `NavLink` (or adding `Router` around `NavLink`), the tests pass, but this would then mean we don't have appropriate routing in the component.
+Without using `NavLink` (or by adding `Router` around `NavLink`), the tests pass, but this would then seemingly mean that we won't have appropriate routing in the component.
 
 The test(s) will need to be updated to account for the above — I’m going to look into this further for future!
 
 
 ### Next-steps / improvements:
-* Update tests (or possibly the `MenuAndNavItems` component itself) to fix the problem described above which is leading to failing tests
+* Update tests (or possibly the `MenuAndNavItems` component itself) to fix the problem described above, which is currently leading to failing tests
 * Lots more testing could be done, including unit tests and component tests, and testing the axios post request
 * Error handling in `Contact` can be improved (also potentially to display a message to the user if there has been a problem with form submission)
 * Further tweaks to styling; e.g. see 'Other comments' section in this pull request: https://github.com/Simon994/brydmr/pull/1
 * Add social media icons in `Contact` to match the Sketch
-* Update arrow in form submission button to match the Sketch (would ideally need an icon for this)
-* Update / check with UX for styling and implementation of dropdown menu
+* Update the arrow symbol in the form submission button, to match the Sketch (would ideally need an icon designed for this)
+* Update / check with UX for current styling and implementation of the dropdown menu
+* Build the other views for the app
