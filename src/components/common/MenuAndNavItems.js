@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, NavLink } from 'react-router-dom'
+import { withRouter, NavLink } from 'react-router-dom'
 
 
 const MenuAndNavItems = (props) => {
@@ -8,7 +8,6 @@ const MenuAndNavItems = (props) => {
   return (
     <ul>
       <li>
-        <Router>
           <NavLink 
             exact to={`/${listItemOne}`}
             className='nav-link'
@@ -16,10 +15,8 @@ const MenuAndNavItems = (props) => {
           >
           {listItemOne.toUpperCase()}
           </NavLink>
-        </Router>
       </li>
       <li>
-        <Router>
           <NavLink 
             exact to={`/${listItemTwo}`}
             className='nav-link'
@@ -27,10 +24,9 @@ const MenuAndNavItems = (props) => {
           >
           {listItemTwo.toUpperCase()}
           </NavLink>
-        </Router>
       </li>
     </ul>
   )
 }
 
-export default MenuAndNavItems
+export default withRouter(MenuAndNavItems)
