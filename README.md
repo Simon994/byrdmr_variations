@@ -28,16 +28,12 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 Please note that although (snapshot) tests have been written, these are currently failing: see below in the 'next-steps and improvements' section for details of why.
 
 ## Other scripts
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
+`npm run build` Builds the app for production to the `build` folder.\
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
-
+If you aren’t satisfied with the build tool and configuration choices, you can run `npm run eject` at any time. This command will remove the single build dependency from your project.
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
@@ -64,8 +60,10 @@ Above 768px (desktop):
 
 `HeroDesktopNavbar` is unique to `Hero` (it doesn't appear anywhere else), whereas the `DropdownMenu` can be re-used across most other views in the app.For this reason `DropdownMenu` is included in the folder `components/common/`. 
 
-Using the component `ToggleActive`, the dropdown menu has also been made interactive as shown in the gif below:
+Using the component `ToggleActive`, the dropdown menu has also been made interactive as shown in the gif below:  
+
 ![Hero dropdown demo](./readme-screenshots/Hero-dropdown-demo.gif)
+
 
 
 #### *Routing*
