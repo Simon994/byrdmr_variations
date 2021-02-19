@@ -1,6 +1,16 @@
-# Getting Started with Create React App
+# BYRDMR
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## What:
+A React app for the BYRDMR drone, with two views (and corresponding components): Hero and Contact.
+
+## Technologies and packages used:
+* React.js (this project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).)
+* HTML
+* CSS
+* axios
+* Jest (and react-test-renderer)
+* react-router-dom
+
 
 ## Available Scripts
 
