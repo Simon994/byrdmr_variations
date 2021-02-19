@@ -66,7 +66,69 @@ Using the component `ToggleActive`, the dropdown menu has also been made interac
 
 ![Hero dropdown demo](./readme-screenshots/Hero-dropdown-demo.gif)
 
+#### *Feature: Add Contact component*
 
+A `Contact` component has been made, containing a form. This is a controlled component, the state of which is updated when a user types in the component's `<input>` or `textarea` fields.  
+
+Screenshot of Contact view:
+![Contact desktop screenshot](./readme-screenshots/Contact-desktop-screenshot.png)
+
+The component has an (asynchronous) method, `handleSubmit`, which includes some basic error handling and a call to `postMessage`:
+```JavaScript
+  handleSubmit = async (e) => {
+      e.preventDefault()
+      try {
+        await postMessage(this.state.formData)
+
+        this.setState({
+          formData: {
+            fullName: '',
+            email: '',
+            message: ''
+          }
+        })
+
+      } catch (err) {
+        this.setState({ formError: true })
+      }
+    }
+```
+
+The function `postMessage` (in the folder `src/lib`) makes a post request, using axios. As shown below, the function will `console.log` the form data to be posted; however, it will currently return a 404 error, as the url being used doesn't yet go anywhere valid and is simply included here as an example of how the request can be made:
+```JavaScript
+  export const postMessage = (formData) => {
+    console.log(formData)
+    return axios.post(`${baseUrl}/messages/`, formData)
+  }
+```
 
 #### *Routing*
 App.js currently contains `Route`s for the `Hero` and `Contact` components. More can be added here in future.
+
+### Testing
+Some (relatively crude!) tests have been added for the Hero component and children (in the folder `components/__tests__/`). 
+These are simple snapshot tests using Jest. For example, to test that the dropdown renders:
+
+```JavaScript
+describe('The DropdownMenu', () => {
+  it('renders as expected', () => {
+    const tree = renderer.create(<DropdownMenu/>).toJSON()
+
+    expect(tree).toMatchSnapshot()
+  })
+})
+```
+As it stands, the tests are currently failing. This is because, in the `MenuAndNavItems` component, we use `NavLink` (imported from react-router-dom node module) to link the list items to other views. Jest currently fails tests with the message ‘Invariant failed: You should not use <withRouter(MenuAndNavItems) /> outside a <Router>’.  
+
+Without using `NavLink` (or adding `Router` around `NavLink`), the tests pass, but this would then mean we don't have appropriate routing in the component.
+
+The test(s) will need to be updated to account for the above — I’m going to look into this further for future!
+
+
+### Next-steps / improvements:
+* Update tests (or possibly the `MenuAndNavItems` component itself) to fix the problem described above which is leading to failing tests
+* Lots more testing could be done, including unit tests and component tests, and testing the axios post request
+* Error handling in `Contact` can be improved (also potentially to display a message to the user if there has been a problem with form submission)
+* Further tweaks to styling; e.g. see 'Other comments' section in this pull request: https://github.com/Simon994/brydmr/pull/1
+* Add social media icons in `Contact` to match the Sketch
+* Update arrow in form submission button to match the Sketch (would ideally need an icon for this)
