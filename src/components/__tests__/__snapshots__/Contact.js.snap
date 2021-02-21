@@ -1,0 +1,134 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Contact component renders as expected 1`] = `
+<div
+  className="contact-container"
+>
+  <div
+    className="outer-menu-container"
+  >
+    <img
+      alt="ByrdMR logo"
+      className="byrd-logo"
+      src="Logo.png"
+    />
+    <div
+      className="inner-menu-container"
+    >
+      <button
+        className="menu-trigger"
+        onClick={[Function]}
+      >
+        <img
+          alt="Menu button icon"
+          src="menu.png"
+        />
+      </button>
+      <nav
+        className="menu inactive"
+      >
+        <ul>
+          <li>
+            <a
+              aria-current={null}
+              className="nav-link"
+              href="/store"
+              onClick={[Function]}
+            >
+              STORE
+            </a>
+          </li>
+          <li>
+            <a
+              aria-current={null}
+              className="nav-link"
+              href="/tutorials"
+              onClick={[Function]}
+            >
+              TUTORIALS
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a
+              aria-current={null}
+              className="nav-link"
+              href="/blog"
+              onClick={[Function]}
+            >
+              BLOG
+            </a>
+          </li>
+          <li>
+            <a
+              aria-current={null}
+              className="nav-link"
+              href="/contact"
+              onClick={[Function]}
+            >
+              CONTACT
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div
+    className="form-container"
+  >
+    <form
+      onSubmit={[Function]}
+    >
+      <label
+        className="form-label"
+      >
+        FULL NAME
+      </label>
+      <input
+        className="input-regular"
+        name="fullName"
+        onChange={[Function]}
+        placeholder="Enter your full name"
+        value=""
+      />
+      <label
+        className="form-label"
+      >
+        EMAIL
+      </label>
+      <input
+        className="input-regular"
+        name="email"
+        onChange={[Function]}
+        placeholder="Enter your email"
+        value=""
+      />
+      <label
+        className="form-label"
+      >
+        MESSAGE
+      </label>
+      <textarea
+        className="input-large"
+        name="message"
+        onChange={[Function]}
+        placeholder="What are your plans?"
+        value=""
+      />
+      <button
+        type="submit"
+      >
+        <div>
+          Send Message
+        </div>
+        <div
+          id="arrow"
+        >
+          →
+        </div>
+      </button>
+    </form>
+  </div>
+</div>
+`;

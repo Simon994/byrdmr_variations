@@ -23,11 +23,12 @@ A React app for the BYRDMR drone, with two views (and corresponding components):
 ## How to test locally:
 
 In the project directory, run `npm run test` in Terminal.  
+Tests are found in the folder `src/components/__tests__`.
+I've also mocked axios in the folder `src/__mocks__`, and subsequently used this to test the function `postMessage`.
 
 This launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.  
 
-Please note that although (snapshot) tests have been written, these are currently failing: see below in the 'Testing' section for details of why.
 
 ## Other scripts
 
@@ -107,27 +108,24 @@ App.js currently contains `Route`s for the `Hero` and `Contact` components. More
 
 ### Testing
 Some (crude!) tests have been added for the Hero component and children (in the folder `components/__tests__/`). 
-These are simple snapshot tests using Jest. For example, to test that the dropdown renders:
+These are simple snapshot tests using Jest. For example, to test that the dropdown renders as expected:
 
 ```JavaScript
 describe('The DropdownMenu', () => {
   it('renders as expected', () => {
-    const tree = renderer.create(<DropdownMenu/>).toJSON()
+    const tree = renderer.create(
+      <BrowserRouter>
+        <DropdownMenu/>
+      </BrowserRouter>
+      ).toJSON()
 
     expect(tree).toMatchSnapshot()
   })
 })
 ```
-As it stands, the tests are currently failing. This is because, in the `MenuAndNavItems` component, we use `NavLink` (imported from react-router-dom node module) to link the list items to other views. Jest currently fails tests with the message: Invariant failed: You should not use `<withRouter(MenuAndNavItems) />` outside a `<Router>`.  
-
-Without using `NavLink` (or by adding `Router` around `NavLink`), the tests pass, but this would then seemingly mean that we won't have appropriate routing in the component.
-
-The test(s) will need to be updated to account for the above — I’m going to look into this further for future!
-
 
 ### Next-steps / improvements:
-* Update tests (or possibly the `MenuAndNavItems` component itself) to fix the problem described above, which is currently leading to failing tests
-* Lots more testing could be done, including unit tests and component tests, and testing the axios post request
+* Lots more testing could be done, including unit tests and component tests.
 * Error handling in `Contact` can be improved (also potentially to display a message to the user if there has been a problem with form submission)
 * Further tweaks to styling; e.g. see 'Other comments' section in this pull request: https://github.com/Simon994/brydmr/pull/1
 * Add social media icons in `Contact` to match the Sketch

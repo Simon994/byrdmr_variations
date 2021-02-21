@@ -1,15 +1,15 @@
 import React from 'react'
+import { BrowserRouter } from 'react-router-dom'
 import renderer from 'react-test-renderer'
-import Hero from '../Hero'
-import { BrowserRouter } from "react-router-dom";
+import Contact from '../Contact'
 
-describe('The Hero component', () => {
+describe('The Contact component', () => {
   it('renders as expected', () => {
     const tree = renderer.create(
       <BrowserRouter>
-            <Hero/>
-      </BrowserRouter>)
-      .toJSON()
+        <Contact/>
+      </BrowserRouter>
+      ).toJSON()
 
     expect(tree).toMatchSnapshot()
   })
