@@ -23,6 +23,8 @@ A React app for the BYRDMR drone, with two views (and corresponding components):
 ## How to test locally:
 
 In the project directory, run `npm run test` in Terminal.  
+Tests are found in the folder `src/components/__tests__`.
+I've also mocked axios in the folder `src/__mocks__`, and subsequently used this to test the function `postMessage`.
 
 This launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.  
@@ -123,7 +125,7 @@ describe('The DropdownMenu', () => {
 ```
 
 ### Next-steps / improvements:
-* Lots more testing could be done, including unit tests and component tests, and testing the axios post request
+* Lots more testing could be done, including unit tests and component tests.
 * Error handling in `Contact` can be improved (also potentially to display a message to the user if there has been a problem with form submission)
 * Further tweaks to styling; e.g. see 'Other comments' section in this pull request: https://github.com/Simon994/brydmr/pull/1
 * Add social media icons in `Contact` to match the Sketch
