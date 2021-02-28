@@ -14,6 +14,6 @@ In addition, scripts for linting have been added:
 ### Code quality
 * Update configuration of eslint to enforce more rules and improve consistency in code
 * Add stylelint for linting CSS
-* Add pre-commit hook with husky, to run linting before each commit
+* Add pre-commit hook with husky, to run linting and tests before each commit
 * Split CSS into separate files for each component
 
