@@ -9,7 +9,7 @@ describe('The DropdownMenu', () => {
       <BrowserRouter>
         <DropdownMenu/>
       </BrowserRouter>
-      ).toJSON()
+    ).toJSON()
 
     expect(tree).toMatchSnapshot()
   })

@@ -1,4 +1,4 @@
-import mockAxios from 'axios';
+import mockAxios from 'axios'
 
 import { postMessage } from '../../lib/api'
 
@@ -27,7 +27,7 @@ describe('postMessage', () => {
     
     // expect
     expect(response.data).toEqual(dataFromMock)
-    expect(mockAxios.post).toHaveBeenCalledTimes(1);
+    expect(mockAxios.post).toHaveBeenCalledTimes(1)
     expect(mockAxios.post).toHaveBeenCalledWith(
       '/api/messages/',
       formDataToSend

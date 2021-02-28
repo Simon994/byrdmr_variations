@@ -9,7 +9,7 @@ describe('The Contact component', () => {
       <BrowserRouter>
         <Contact/>
       </BrowserRouter>
-      ).toJSON()
+    ).toJSON()
 
     expect(tree).toMatchSnapshot()
   })
