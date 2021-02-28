@@ -1,9 +1,8 @@
-import React from 'react'
-
+import { Component } from 'react' 
 import DropdownMenu from './common/DropdownMenu'
 import { postMessage } from '../../src/lib/api'
 
-class Contact extends React.Component {
+class Contact extends Component {
 
   state = {
     formData: {

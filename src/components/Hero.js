@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 
 import HeroDesktopNavbar from './HeroDesktopNavbar'
 import DropdownMenu from './common/DropdownMenu'
