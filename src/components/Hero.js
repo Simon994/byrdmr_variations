@@ -44,8 +44,8 @@ const Hero = () => {
             alt='Shadow'
           />
           <h1>F-210</h1>
-          <h3>"THE FASTEST DRONE ON THE PLANET"</h3>
-          <p>"The— The Wirecutter</p>
+          <h3>&quot;THE FASTEST DRONE ON THE PLANET&quot;</h3>
+          <p>&quot;The— The Wirecutter</p>
         </div>
       </section>
     </>
