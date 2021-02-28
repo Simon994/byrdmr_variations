@@ -1,0 +1,35 @@
+/* Desktop navbar */
+
+.desktop-nav {
+  padding-top: 74px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-container ul,
+.right-container ul {
+  list-style: none;
+}
+
+.left-container ul li,
+.right-container ul li {
+  display: inline-block;
+}
+
+.left-container ul {
+  margin-left: 131.5px;
+}
+
+.right-container ul {
+  margin-right: 131.5px;
+}
+
+.left-container ul li:first-child,
+.right-container ul li:first-child {
+  padding-right: 50.5px;
+}
+
+.byrd-logo {
+  width: 216px;
+  height: 32.11px;
+}

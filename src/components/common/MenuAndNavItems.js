@@ -1,6 +1,6 @@
-import React from 'react'
 import { withRouter, NavLink } from 'react-router-dom'
 
+import './MenuAndNavItems.css'
 
 const MenuAndNavItems = (props) => {
   const [listItemOne, listItemTwo] = [...props.listItems]
@@ -8,22 +8,22 @@ const MenuAndNavItems = (props) => {
   return (
     <ul>
       <li>
-          <NavLink 
-            exact to={`/${listItemOne}`}
-            className='nav-link'
-            activeClassName='selected'
-          >
+        <NavLink 
+          exact to={`/${listItemOne}`}
+          className='nav-link'
+          activeClassName='selected'
+        >
           {listItemOne.toUpperCase()}
-          </NavLink>
+        </NavLink>
       </li>
       <li>
-          <NavLink 
-            exact to={`/${listItemTwo}`}
-            className='nav-link'
-            activeClassName='selected'
-          >
+        <NavLink 
+          exact to={`/${listItemTwo}`}
+          className='nav-link'
+          activeClassName='selected'
+        >
           {listItemTwo.toUpperCase()}
-          </NavLink>
+        </NavLink>
       </li>
     </ul>
   )

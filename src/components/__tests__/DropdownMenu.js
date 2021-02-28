@@ -1,4 +1,3 @@
-import React from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import renderer from 'react-test-renderer'
 import DropdownMenu from '../common/DropdownMenu'
@@ -9,7 +8,7 @@ describe('The DropdownMenu', () => {
       <BrowserRouter>
         <DropdownMenu/>
       </BrowserRouter>
-      ).toJSON()
+    ).toJSON()
 
     expect(tree).toMatchSnapshot()
   })

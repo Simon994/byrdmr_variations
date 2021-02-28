@@ -1,4 +1,3 @@
-import React from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import renderer from 'react-test-renderer'
 import Contact from '../Contact'
@@ -9,7 +8,7 @@ describe('The Contact component', () => {
       <BrowserRouter>
         <Contact/>
       </BrowserRouter>
-      ).toJSON()
+    ).toJSON()
 
     expect(tree).toMatchSnapshot()
   })
