@@ -1,20 +1,24 @@
 @font-face {
   font-family: 'Archivo-Bold';
-  src: local('Archivo-Bold'),
-  url('./assets/fonts/Archivo-Bold.ttf') format("truetype");
+  src:
+    local('Archivo-Bold'),
+    url('./assets/fonts/Archivo-Bold.ttf') format("truetype");
   font-weight: bold;
 }
 
 @font-face {
   font-family: 'Archivo-Medium';
-  src: local('Archivo-Medium'),
-  url('./assets/fonts/Archivo-Medium.ttf') format("truetype");
+  src:
+    local('Archivo-Medium'),
+    url('./assets/fonts/Archivo-Medium.ttf') format("truetype");
   font-weight: normal;
 }
 
 body {
   margin: 0;
-  font-family: 'Archivo-Medium', 'Helvetica Neue',
+  font-family:
+    'Archivo-Medium',
+    'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -23,7 +27,7 @@ body {
 /* Hero section text and images */
 
 .hero-section {
-  background: #F5F1ED;
+  background: #f5f1ed;
   height: 100vh;
 }
 
@@ -47,7 +51,10 @@ body {
 }
 
 .hero-inner-container h1 {
-  font-family: 'Archivo-Bold';
+  font-family:
+    'Archivo-Bold',
+    'Helvetica Neue',
+    sans-serif;
   font-size: 265px;
   letter-spacing: 0.075em;
   margin: -110px 0 0 0;
@@ -71,7 +78,6 @@ body {
 
 .desktop-nav {
   padding-top: 74px;
-
   display: flex;
   justify-content: space-between;
 }
@@ -80,6 +86,7 @@ body {
 .right-container ul {
   list-style: none;
 }
+
 .left-container ul li,
 .right-container ul li {
   display: inline-block;
@@ -107,7 +114,6 @@ body {
   text-decoration: none;
   color: black;
 }
-
 
 /* Drop-down menu (for tablet width and below) */
 
@@ -178,21 +184,18 @@ body {
 }
 
 .menu li {
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #ddd;
 }
-
-
 
 /* Contact form  */
 
 .contact-container {
-  background: #F5F1ED;
+  background: #f5f1ed;
   height: 100vh;
 }
 
 .form-container {
   height: 85vh;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -217,7 +220,10 @@ form label {
 form input,
 textarea {
   font-size: 19px;
-  font-family: 'Archivo-Medium';
+  font-family:
+    'Archivo-Medium',
+    'Helvetica Neue',
+    sans-serif;
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   background: inherit;
@@ -234,7 +240,7 @@ textarea {
 }
 
 form button {
-  background: #FF5300;
+  background: #ff5300;
   border: none;
   cursor: pointer;
   color: white;
@@ -242,16 +248,15 @@ form button {
   height: 58px;
   font-size: 18px;
   padding-top: 15px;
-
   display: flex;
   justify-content: space-around;
 }
 
 form button:hover {
   background: #434343;
-  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-  box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+  -webkit-box-shadow: 0 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0 5px 40px -10px rgba(0, 0, 0, 0.57);
+  box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
   transition: all 0.4s ease 0s;
 }
 
@@ -264,10 +269,7 @@ form button div {
   font-size: 20px;
 }
 
-
 /* Media rules */
-
-
 
 @media screen and (max-width: 768px) {
   .hero-inner-container h1 {
@@ -289,7 +291,7 @@ form button div {
   #drone-img {
     width: 410px;
   }
-  
+
   .hero-inner-container h1 {
     font-size: 110px;
     margin: 20px 0 10px 0;
