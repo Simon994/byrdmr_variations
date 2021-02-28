@@ -1,3 +1,4 @@
+import './HeroDesktopNavbar.css'
 import MenuAndNavItems from './common/MenuAndNavItems'
 import Logo from '../styles/assets/Logo.png'
 

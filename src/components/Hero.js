@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 
+import './Hero.css'
 import HeroDesktopNavbar from './HeroDesktopNavbar'
 import DropdownMenu from './common/DropdownMenu'
 import Drone from '../styles/assets/Drone.png'

@@ -1,5 +1,6 @@
 import {useRef} from 'react'
 
+import './DropdownMenu.css'
 import MenuAndNavItems from './MenuAndNavItems'
 import ToggleActive from './ToggleActive'
 import menu from '../../styles/assets/menu.png'

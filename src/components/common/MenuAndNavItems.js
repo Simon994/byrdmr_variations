@@ -1,5 +1,6 @@
 import { withRouter, NavLink } from 'react-router-dom'
 
+import './MenuAndNavItems.css'
 
 const MenuAndNavItems = (props) => {
   const [listItemOne, listItemTwo] = [...props.listItems]

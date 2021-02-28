@@ -1,0 +1,94 @@
+/* Drop-down menu (for tablet width and below) */
+
+.outer-menu-container {
+  display: flex;
+  justify-content: center;
+}
+
+.outer-menu-container .byrd-logo {
+  margin-top: 52px;
+}
+
+.inner-menu-container {
+  position: absolute;
+  right: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-trigger {
+  background: none;
+  cursor: pointer;
+  border: none;
+  transition: box-shadow 0.4s ease;
+  margin-left: auto;
+}
+
+.menu-trigger:hover {
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.menu-trigger span {
+  font-weight: 700;
+  vertical-align: middle;
+  font-size: 14px;
+  margin: 0 10px;
+}
+
+.menu-trigger img {
+  margin-top: 40px;
+  width: 60px;
+}
+
+.menu {
+  background: white;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 150px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+}
+
+.menu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(50px);
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  border-bottom: 1px solid #ddd;
+}
+
+@media screen and (max-width: 375px) {
+  .outer-menu-container .byrd-logo {
+    margin-top: 25px;
+    width: 136px;
+    height: auto;
+  }
+
+  .menu-trigger img {
+    margin-top: 7px;
+    position: absolute;
+    right: -45px;
+  }
+
+  .menu {
+    z-index: 20;
+    top: 30px;
+  }
+
+  form {
+    width: 322px;
+  }
+}

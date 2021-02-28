@@ -1,4 +1,6 @@
 import { Component } from 'react' 
+
+import './Contact.css'
 import DropdownMenu from './common/DropdownMenu'
 import { postMessage } from '../../src/lib/api'
 
