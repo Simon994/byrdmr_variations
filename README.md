@@ -17,3 +17,8 @@ In addition, scripts for linting have been added:
 * Add pre-commit hook with husky, to run linting and tests before each commit
 * Split CSS into separate files for each component
 
+### Improve styling
+* Updates to styling, to more strictly reflect Sketch designs
+* Add social media icons in Contact component
+* Update snapshots for tests where necessary
+
