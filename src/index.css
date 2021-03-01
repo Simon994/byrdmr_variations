@@ -14,6 +14,22 @@
   font-weight: normal;
 }
 
+@font-face {
+  font-family: 'ProximaNova-Regular';
+  src:
+    local('ProximaNova-Regular'),
+    url('./styles/assets/fonts/ProximaNova-Regular.otf') format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNova-Semibold';
+  src:
+    local('ProximaNova-Regular'),
+    url('./styles/assets/fonts/ProximaNova-Semibold.otf') format("truetype");
+  font-weight: normal;
+}
+
 body {
   margin: 0;
   font-family:
@@ -22,4 +38,5 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: rgb(49, 33, 27);
 }
