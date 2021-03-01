@@ -77,10 +77,13 @@
   }
 
   .hero-inner-container h1 {
-    font-size: 160px;
+    font-size: 175px;
     margin: -60px 0 20px 0;
     white-space: nowrap;
+    letter-spacing: 13px;
   }
+
+  
 }
 
 @media screen and (max-width: 375px) {
