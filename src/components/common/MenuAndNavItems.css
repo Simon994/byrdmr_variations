@@ -1,4 +1,6 @@
 .nav-link {
   text-decoration: none;
-  color: black;
+  color: rgb(49, 33, 27);
+  letter-spacing: 1px;
+  font-size: 14px;
 }

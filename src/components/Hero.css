@@ -1,5 +1,12 @@
 /* Hero section text and images */
 
+:root {
+  --drone-base-width: 429px;
+  --drone-base-height: 354px;
+  --hero-img-scaling: 1.27;
+  --hero-img-scaling-phone: 0.956;
+}
+
 .hero-section {
   background: #f5f1ed;
   height: 100vh;
@@ -14,14 +21,16 @@
 }
 
 #drone-img {
-  width: 429px;
-  height: auto;
+  width: var(--drone-base-width);
+  height: var(--drone-base-height);
   z-index: 10;
 }
 
 #shadow-img {
-  width: 300px;
+  width: 330px;
   z-index: 10;
+  position: relative;
+  top: -15px;
 }
 
 .hero-inner-container h1 {
@@ -29,29 +38,50 @@
     'Archivo-Bold',
     'Helvetica Neue',
     sans-serif;
-  font-size: 265px;
-  letter-spacing: 0.075em;
-  margin: -110px 0 0 0;
+  font-size: 235px;
+  font-weight: normal;
+  letter-spacing: 18.8px;
+  line-height: 265px;
+  min-height: 265px;
+  margin: -90px 0 0 0;
   color: white;
 }
 
 .hero-inner-container h3,
 .hero-inner-container p {
-  color: rgba(0, 0, 0, 0.23);
+  color: rgba(49, 33, 27, 0.23);
   margin-top: 0;
   text-align: center;
+  font-weight: 500;
 }
 
 .hero-inner-container h3 {
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 10px;
-  letter-spacing: 0.075em;
+  letter-spacing: 1.29px;
+}
+
+.hero-inner-container p {
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 
 @media screen and (max-width: 768px) {
+  #drone-img {
+    width: calc(var(--drone-base-width) * var(--hero-img-scaling));
+    height: calc(var(--drone-base-height) * var(--hero-img-scaling));
+  }
+
+  #shadow-img {
+    width: calc(330px * var(--hero-img-scaling));
+    top: -15px;
+  }
+
   .hero-inner-container h1 {
-    font-size: 160px;
-    margin: 20px 0 20px 0;
+    font-size: 175px;
+    margin: -60px 0 20px 0;
+    white-space: nowrap;
+    letter-spacing: 13px;
   }
 }
 
@@ -62,12 +92,22 @@
   }
 
   #drone-img {
-    width: 410px;
+    width: calc(var(--drone-base-width) * var(--hero-img-scaling-phone));
+    height: calc(var(--drone-base-height) * var(--hero-img-scaling-phone));
+  }
+
+  #shadow-img {
+    width: calc(330px * var(--hero-img-scaling-phone));
+    top: -15px;
   }
 
   .hero-inner-container h1 {
     font-size: 100px;
-    margin: 20px 0 10px 0;
+    margin: -20px 0 10px 0;
+    letter-spacing: 4.72px;
+    line-height: 104px;
+    min-height: 116px;
+    min-width: 298px;
   }
 
   .hero-inner-container h3 {

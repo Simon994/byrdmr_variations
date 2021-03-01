@@ -86,10 +86,10 @@ exports[`The Hero component renders as expected 1`] = `
       F-210
     </h1>
     <h3>
-      "THE FASTEST DRONE ON THE PLANET"
+      “THE FASTEST DRONE ON THE PLANET”
     </h3>
     <p>
-      "The— The Wirecutter
+      “The– The Wirecutter
     </p>
   </div>
 </section>

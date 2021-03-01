@@ -5,6 +5,25 @@ exports[`The Contact component renders as expected 1`] = `
   className="contact-container"
 >
   <div
+    className="social-container"
+  >
+    <img
+      alt="facebook"
+      className="social-logo"
+      src="fb-logo.png"
+    />
+    <img
+      alt="instagram"
+      className="social-logo"
+      src="insta-logo.png"
+    />
+    <img
+      alt="twitter"
+      className="social-logo"
+      src="twitter-logo.png"
+    />
+  </div>
+  <div
     className="outer-menu-container"
   >
     <img
@@ -122,11 +141,11 @@ exports[`The Contact component renders as expected 1`] = `
         <div>
           Send Message
         </div>
-        <div
-          id="arrow"
-        >
-          →
-        </div>
+        <img
+          alt="arrow"
+          className="arrow"
+          src="button-arrow.png"
+        />
       </button>
     </form>
   </div>

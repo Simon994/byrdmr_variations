@@ -11,7 +11,7 @@
 
 .inner-menu-container {
   position: absolute;
-  right: 63px;
+  right: 33px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,18 +77,16 @@
     height: auto;
   }
 
+  .inner-menu-container {
+    right: 0;
+  }
+
   .menu-trigger img {
     margin-top: 7px;
-    position: absolute;
-    right: -45px;
   }
 
   .menu {
     z-index: 20;
     top: 30px;
-  }
-
-  form {
-    width: 322px;
   }
 }

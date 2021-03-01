@@ -5,6 +5,25 @@
   height: 100vh;
 }
 
+.social-container {
+  height: 18px;
+  width: 90px;
+  margin-left: 18px;
+  position: relative;
+  top: 80px;
+  opacity: 0.2;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-logo {
+  height: 100%;
+}
+
+.social-logo:hover {
+  cursor: pointer;
+}
+
 .form-container {
   height: 85vh;
   display: flex;
@@ -24,15 +43,17 @@ textarea {
 }
 
 form label {
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 7px;
+  margin-left: 3px;
+  letter-spacing: 1px;
 }
 
 form input,
 textarea {
-  font-size: 19px;
+  font-size: 20px;
   font-family:
-    'Archivo-Medium',
+    'ProximaNova-Regular',
     'Helvetica Neue',
     sans-serif;
   border: none;
@@ -51,16 +72,20 @@ textarea {
 }
 
 form button {
-  background: #ff5300;
+  background: rgb(238, 95, 32);
   border: none;
   cursor: pointer;
   color: white;
   width: 223px;
   height: 58px;
-  font-size: 18px;
-  padding-top: 15px;
+  font-size: 20px;
+  font-family:
+    'ProximaNova-Semibold',
+    'Helvetica Neue',
+    sans-serif;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 form button:hover {
@@ -71,16 +96,15 @@ form button:hover {
   transition: all 0.4s ease 0s;
 }
 
-form button div {
-  width: 30%;
-  text-align: center;
-}
-
-#arrow {
-  font-size: 20px;
+.arrow {
+  width: 17px;
 }
 
 @media screen and (max-width: 768px) {
+  .social-container {
+    display: none;
+  }
+
   form {
     width: 647px;
   }
@@ -89,5 +113,9 @@ form button div {
 @media screen and (max-width: 375px) {
   form {
     width: 322px;
+  }
+
+  form button {
+    width: 326px;
   }
 }
