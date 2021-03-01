@@ -4,6 +4,7 @@
   --drone-base-width: 429px;
   --drone-base-height: 354px;
   --hero-img-scaling: 1.27;
+  --hero-img-scaling-phone: 0.956;
 }
 
 .hero-section {
@@ -91,12 +92,22 @@
   }
 
   #drone-img {
-    width: 410px;
+    width: calc(var(--drone-base-width) * var(--hero-img-scaling-phone));
+    height: calc(var(--drone-base-height) * var(--hero-img-scaling-phone));
+  }
+
+  #shadow-img {
+    width: calc(330px * var(--hero-img-scaling-phone));
+    top: -15px;
   }
 
   .hero-inner-container h1 {
     font-size: 100px;
-    margin: 20px 0 10px 0;
+    margin: -20px 0 10px 0;
+    letter-spacing: 4.72px;
+    line-height: 104px;
+    min-height: 116px;
+    min-width: 298px;
   }
 
   .hero-inner-container h3 {
