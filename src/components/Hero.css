@@ -67,15 +67,15 @@
 
 @media screen and (max-width: 768px) {
   #drone-img {
-    width: calc(var(--drone-base-width)*var(--hero-img-scaling));
-    height: calc(var(--drone-base-height)*var(--hero-img-scaling));
+    width: calc(var(--drone-base-width) * var(--hero-img-scaling));
+    height: calc(var(--drone-base-height) * var(--hero-img-scaling));
   }
 
   #shadow-img {
-    width: calc(330px*var(--hero-img-scaling));
+    width: calc(330px * var(--hero-img-scaling));
     top: -15px;
   }
-  
+
   .hero-inner-container h1 {
     font-size: 160px;
     margin: -60px 0 20px 0;
