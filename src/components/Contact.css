@@ -101,6 +101,10 @@ form button:hover {
 }
 
 @media screen and (max-width: 768px) {
+  .social-container {
+    display: none;
+  }
+
   form {
     width: 647px;
   }
@@ -110,4 +114,9 @@ form button:hover {
   form {
     width: 322px;
   }
+
+  form button {
+    width: 326px;
+  }
+
 }
