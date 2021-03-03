@@ -6,7 +6,7 @@ import ToggleActive from './ToggleActive'
 import menu from '../../styles/assets/menu.png'
 import Logo from '../../styles/assets/Logo.png'
 
-export default function DropdownMenu() {
+const DropdownMenu = () => {
   const dropdownRef = useRef(null)
   const [isActive, setIsActive] = ToggleActive(dropdownRef, false)
   const onClick = () => setIsActive(!isActive)
@@ -39,3 +39,4 @@ export default function DropdownMenu() {
   )
 }
 
+export default DropdownMenu
