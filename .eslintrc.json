@@ -47,6 +47,10 @@
           "error",
           "never"
       ],
+      "object-curly-spacing": [
+        "error",
+        "always"
+      ],
       "no-unused-vars": "warn",
       "import/no-anonymous-default-export": "off",
       "react/react-in-jsx-scope": "off",  // suppress errors for missing 'import React' in files (no longer needed for React 17),

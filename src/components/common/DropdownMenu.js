@@ -1,4 +1,4 @@
-import {useRef} from 'react'
+import { useRef } from 'react'
 
 import './DropdownMenu.css'
 import MenuAndNavItems from './MenuAndNavItems'

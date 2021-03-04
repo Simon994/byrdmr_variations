@@ -6,16 +6,16 @@ describe('Form', () => {
   it('renders the desired fields', () => {
     render(<Form />)
     expect(
-      screen.getByRole('textbox', {name: 'FULL NAME'})
+      screen.getByRole('textbox', { name: 'FULL NAME' })
     ).toBeInTheDocument()
     expect(
-      screen.getByRole('textbox', {name: 'EMAIL'})
+      screen.getByRole('textbox', { name: 'EMAIL' })
     ).toBeInTheDocument()
     expect(
-      screen.getByRole('textbox', {name: 'MESSAGE'})
+      screen.getByRole('textbox', { name: 'MESSAGE' })
     ).toBeInTheDocument()
     expect(
-      screen.getByRole('button', {name: 'submit the form'})
+      screen.getByRole('button', { name: 'submit the form' })
     ).toHaveAttribute('type', 'submit')
   })
 
@@ -23,7 +23,7 @@ describe('Form', () => {
     const mockSubmit = jest.fn()
     render(<Form handleSubmit={mockSubmit}/>)
     fireEvent.submit(
-      screen.getByRole('button', {name: 'submit the form'})
+      screen.getByRole('button', { name: 'submit the form' })
     )
     expect(mockSubmit).toBeCalled()
   })
