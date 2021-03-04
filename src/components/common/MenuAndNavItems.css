@@ -4,3 +4,7 @@
   letter-spacing: 1px;
   font-size: 14px;
 }
+
+.selected {
+  color: rgb(238, 95, 32);
+}
