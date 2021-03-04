@@ -1,13 +1,14 @@
-import { Component } from 'react' 
-
 import './Contact.css'
 import fbLogo from '../styles/assets/fb-logo.png'
 import instaLogo from '../styles/assets/insta-logo.png'
 import twitterLogo from '../styles/assets/twitter-logo.png'
 import DropdownMenu from './common/DropdownMenu'
 import Form from './Form'
+import useForm from './CustomHooks'
 
 const Contact = () => {
+  const { handleSubmit } = useForm()
+
   return (
     <div className='contact-container'>
       <div className='social-container'>
@@ -17,7 +18,7 @@ const Contact = () => {
       </div>
       <DropdownMenu/>
       <div className='form-container'>
-        <Form/>
+        <Form handleSubmit={handleSubmit}/>
       </div>
     </div>
   )

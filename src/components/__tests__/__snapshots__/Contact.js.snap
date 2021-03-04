@@ -97,15 +97,18 @@ exports[`The Contact component renders as expected 1`] = `
     className="form-container"
   >
     <form
+      data-testid="form"
       onSubmit={[Function]}
     >
       <label
         className="form-label"
+        htmlFor="full-name"
       >
         FULL NAME
       </label>
       <input
         className="input-regular"
+        id="full-name"
         name="fullName"
         onChange={[Function]}
         placeholder="Enter your full name"
@@ -113,11 +116,13 @@ exports[`The Contact component renders as expected 1`] = `
       />
       <label
         className="form-label"
+        htmlFor="email"
       >
         EMAIL
       </label>
       <input
         className="input-regular"
+        id="email"
         name="email"
         onChange={[Function]}
         placeholder="Enter your email"
@@ -125,17 +130,20 @@ exports[`The Contact component renders as expected 1`] = `
       />
       <label
         className="form-label"
+        htmlFor="message"
       >
         MESSAGE
       </label>
       <textarea
         className="input-large"
+        id="message"
         name="message"
         onChange={[Function]}
         placeholder="What are your plans?"
         value=""
       />
       <button
+        aria-label="submit the form"
         type="submit"
       >
         <div>
