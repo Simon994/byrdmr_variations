@@ -10,12 +10,11 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  install:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v2
     - run: npm install
-    - run: npm build
     - uses: actions/upload-artifact@main
       with:
         name: webpack artifacts
@@ -23,7 +22,7 @@ jobs:
   
   test:
     runs-on: macos-latest
-    needs: build
+    needs: install
     strategy:
       matrix:
         node-version: [12.x, 14.x]
@@ -38,4 +37,5 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - run: npm install
     - run: npm test
