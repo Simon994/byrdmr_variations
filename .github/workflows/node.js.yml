@@ -30,7 +30,6 @@ jobs:
           ${{ runner.os }}-
     
     - name: Install dependencies
-      if: steps.myCacheStep.outputs.cache-hit != 'true'
       run: npm install
     
     - name: Run tests
