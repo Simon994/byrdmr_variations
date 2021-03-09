@@ -1,3 +1,4 @@
+
 # This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
@@ -14,7 +15,7 @@ jobs:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v2
-    
+
     - name: Cache node modules
       id: myCacheStep
       uses: actions/cache@v2
@@ -28,12 +29,27 @@ jobs:
           ${{ runner.os }}-build-${{ env.cache-name }}-
           ${{ runner.os }}-build-
           ${{ runner.os }}-
-    
-    - name: Install dependencies
+  
+    - name: Install Dependencies
+      if: steps.myCacheStep.outputs.cache-hit != 'true'
       run: npm install
-    
-    - name: Run tests
-      run: npm test
-      
-    - name: Run linting
-      run: npm lint-all
+  
+  test:
+    runs-on: macos-latest
+    needs: install
+    strategy:
+      matrix:
+        node-version: [12.x, 14.x]
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/download-artifact@main
+      with:
+        name: webpack artifacts
+        path: public
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: npm install
+    - run: npm test
