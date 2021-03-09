@@ -54,4 +54,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - name: Install dependencies
+      if: steps.myCacheStep.outputs.cache-hit != 'true'
+      run: npm install
     - run: npm test
