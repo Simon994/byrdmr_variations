@@ -14,6 +14,7 @@ jobs:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v2
+    
     - name: Cache node modules
       id: myCacheStep
       uses: actions/cache@v2
@@ -27,8 +28,10 @@ jobs:
           ${{ runner.os }}-build-${{ env.cache-name }}-
           ${{ runner.os }}-build-
           ${{ runner.os }}-
-    - if: steps.myCacheStep.outputs.cache-hit != 'true'
-    - run: npm install
+    
+    - name: Install dependencies
+      if: steps.myCacheStep.outputs.cache-hit != 'true'
+      run: npm install
     - uses: actions/upload-artifact@main
       with:
         name: webpack artifacts
