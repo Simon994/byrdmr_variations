@@ -10,21 +10,32 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
-
-    runs-on: ubuntu-latest
-
+  install:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v2
+    - run: npm install
+    - uses: actions/upload-artifact@main
+      with:
+        name: webpack artifacts
+        path: public/
+  
+  test:
+    runs-on: macos-latest
+    needs: install
     strategy:
       matrix:
-        node-version: [10.x, 12.x, 14.x, 15.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+        node-version: [12.x, 14.x]
 
     steps:
     - uses: actions/checkout@v2
+    - uses: actions/download-artifact@main
+      with:
+        name: webpack artifacts
+        path: public
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm ci
-    - run: npm run build --if-present
+    - run: npm install
     - run: npm test
