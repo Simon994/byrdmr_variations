@@ -1,3 +1,4 @@
+
 # This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
@@ -10,32 +11,16 @@ on:
     branches: [ main ]
 
 jobs:
-  install:
+  install_test_lint:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v2
-    - run: npm install
-    - uses: actions/upload-artifact@main
-      with:
-        name: webpack artifacts
-        path: public/
   
-  test:
-    runs-on: macos-latest
-    needs: install
-    strategy:
-      matrix:
-        node-version: [12.x, 14.x]
-
-    steps:
-    - uses: actions/checkout@v2
-    - uses: actions/download-artifact@main
-      with:
-        name: webpack artifacts
-        path: public
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - run: npm install
-    - run: npm test
+    - name: Install Dependencies
+      run: npm ci
+  
+    - name: Run tests
+      run: npm run test-all
+    
+    - name: Run linting
+      run: npm run lint-all
