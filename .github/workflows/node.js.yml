@@ -11,7 +11,7 @@ on:
     branches: [ main ]
 
 jobs:
-  install_test_lint:
+  install_test_lint_build:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v2
@@ -37,3 +37,6 @@ jobs:
     
     - name: Run linting
       run: npm run lint-all
+      
+    - name: Build
+      run: npm build
