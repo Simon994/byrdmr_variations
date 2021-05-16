@@ -1,6 +1,6 @@
 import './HeroDesktopNavbar.css'
 import MenuAndNavItems from './common/MenuAndNavItems'
-import Logo from '../styles/assets/Logo.png'
+import Logo from './common/Logo'
 
 function HeroDesktopNavbar() {
 
@@ -9,11 +9,7 @@ function HeroDesktopNavbar() {
       <div className='left-container'>
         <MenuAndNavItems listItems={['store', 'tutorials']}/>
       </div>
-      <img 
-        src={Logo}
-        alt='ByrdMR logo'
-        className='byrd-logo'
-      />
+      <Logo />
       <div className='right-container'>
         <MenuAndNavItems listItems={['blog', 'contact']}/>
       </div>

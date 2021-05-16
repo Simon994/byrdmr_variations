@@ -5,6 +5,10 @@
   height: 100vh;
 }
 
+.contact-header {
+  display: flex;
+}
+
 .social-container {
   height: 18px;
   width: 90px;
