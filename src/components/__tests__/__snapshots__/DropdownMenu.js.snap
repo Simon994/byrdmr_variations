@@ -2,73 +2,64 @@
 
 exports[`The DropdownMenu renders as expected 1`] = `
 <div
-  className="outer-menu-container"
+  className="inner-menu-container"
 >
-  <img
-    alt="ByrdMR logo"
-    className="byrd-logo"
-    src="Logo.png"
-  />
-  <div
-    className="inner-menu-container"
+  <button
+    className="menu-trigger"
+    onClick={[Function]}
   >
-    <button
-      className="menu-trigger"
-      onClick={[Function]}
-    >
-      <img
-        alt="Menu button icon"
-        src="menu.png"
-      />
-    </button>
-    <nav
-      className="menu inactive"
-    >
-      <ul>
-        <li>
-          <a
-            aria-current={null}
-            className="nav-link"
-            href="/store"
-            onClick={[Function]}
-          >
-            STORE
-          </a>
-        </li>
-        <li>
-          <a
-            aria-current={null}
-            className="nav-link"
-            href="/tutorials"
-            onClick={[Function]}
-          >
-            TUTORIALS
-          </a>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <a
-            aria-current={null}
-            className="nav-link"
-            href="/blog"
-            onClick={[Function]}
-          >
-            BLOG
-          </a>
-        </li>
-        <li>
-          <a
-            aria-current={null}
-            className="nav-link"
-            href="/contact"
-            onClick={[Function]}
-          >
-            CONTACT
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </div>
+    <img
+      alt="Menu button icon"
+      src="menu.png"
+    />
+  </button>
+  <nav
+    className="menu inactive"
+  >
+    <ul>
+      <li>
+        <a
+          aria-current={null}
+          className="nav-link"
+          href="/store"
+          onClick={[Function]}
+        >
+          STORE
+        </a>
+      </li>
+      <li>
+        <a
+          aria-current={null}
+          className="nav-link"
+          href="/tutorials"
+          onClick={[Function]}
+        >
+          TUTORIALS
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a
+          aria-current={null}
+          className="nav-link"
+          href="/blog"
+          onClick={[Function]}
+        >
+          BLOG
+        </a>
+      </li>
+      <li>
+        <a
+          aria-current={null}
+          className="nav-link"
+          href="/contact"
+          onClick={[Function]}
+        >
+          CONTACT
+        </a>
+      </li>
+    </ul>
+  </nav>
 </div>
 `;

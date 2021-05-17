@@ -4,6 +4,7 @@
   padding-top: 52px;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .left-container ul,

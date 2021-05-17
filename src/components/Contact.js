@@ -10,13 +10,12 @@ const Contact = () => {
   return (
     <div className='contact-container'>
       <div className='contact-header'>
-        {/* <div className='social-container'>
+        <div className='social-container'>
           <img src={fbLogo} className='social-logo' alt='facebook' />
           <img src={instaLogo} className='social-logo' alt='instagram' />
           <img src={twitterLogo} className='social-logo' alt='twitter' />
-        </div> */}
+        </div>
         <Logo />
-        <div>WANT TO BE IN LINE</div>
         <DropdownMenu />
       </div>
       <div className='form-container'>

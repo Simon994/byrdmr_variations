@@ -32,7 +32,7 @@ exports[`The HeroDesktopNavbar (navbar for hero view on desktop device) renders 
   </div>
   <img
     alt="ByrdMR logo"
-    className="byrd-logo"
+    className="sc-bdnxRM iuppKl byrd-logo"
     src="Logo.png"
   />
   <div

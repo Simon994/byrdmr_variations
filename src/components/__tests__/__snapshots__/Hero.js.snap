@@ -37,7 +37,7 @@ exports[`The Hero component renders as expected 1`] = `
         </div>
         <img
           alt="ByrdMR logo"
-          className="byrd-logo"
+          className="sc-bdnxRM iuppKl byrd-logo"
           src="Logo.png"
         />
         <div

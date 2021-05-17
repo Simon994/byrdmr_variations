@@ -6,7 +6,11 @@
 }
 
 .contact-header {
+  position: relative;
+  padding-top: 52px;
+  
   display: flex;
+  justify-content: space-between;
 }
 
 .social-container {
@@ -14,8 +18,9 @@
   width: 90px;
   margin-left: 18px;
   position: relative;
-  top: 80px;
+  top: 20px;
   opacity: 0.2;
+  
   display: flex;
   justify-content: space-between;
 }

@@ -5,30 +5,30 @@ exports[`The Contact component renders as expected 1`] = `
   className="contact-container"
 >
   <div
-    className="social-container"
+    className="contact-header"
   >
-    <img
-      alt="facebook"
-      className="social-logo"
-      src="fb-logo.png"
-    />
-    <img
-      alt="instagram"
-      className="social-logo"
-      src="insta-logo.png"
-    />
-    <img
-      alt="twitter"
-      className="social-logo"
-      src="twitter-logo.png"
-    />
-  </div>
-  <div
-    className="outer-menu-container"
-  >
+    <div
+      className="social-container"
+    >
+      <img
+        alt="facebook"
+        className="social-logo"
+        src="fb-logo.png"
+      />
+      <img
+        alt="instagram"
+        className="social-logo"
+        src="insta-logo.png"
+      />
+      <img
+        alt="twitter"
+        className="social-logo"
+        src="twitter-logo.png"
+      />
+    </div>
     <img
       alt="ByrdMR logo"
-      className="byrd-logo"
+      className="sc-bdnxRM iuppKl byrd-logo"
       src="Logo.png"
     />
     <div

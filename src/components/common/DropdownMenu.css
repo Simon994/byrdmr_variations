@@ -1,14 +1,5 @@
 /* Drop-down menu (for tablet width and below) */
 
-/* .outer-menu-container {
-  display: flex;
-  justify-content: center;
-} */
-
-.outer-menu-container .byrd-logo {
-  margin-top: 52px;
-}
-
 .inner-menu-container {
   /* position: absolute; */
   right: 33px;
@@ -37,7 +28,6 @@
 }
 
 .menu-trigger img {
-  margin-top: 40px;
   width: 60px;
 }
 
